@@ -1,36 +1,21 @@
-# Animbench website
+# Animbench
 
-Landing page for Animbench, an animation toolkit for Autodesk Maya.
-Plain HTML/CSS/JS, hosted on GitHub Pages.
+**Less routine. More animation.**
 
-```
-index.html          English page
-ru/index.html       Russian page
-assets/css/         styles
-assets/js/          scroll reveal + video pause button
-assets/img/         logo, favicon
-assets/video/       showreel and demo clips
-```
+Animbench is an animation toolkit for Autodesk Maya. It brings everyday work with keys, curves, poses, controls and animation layers into one compact toolbar with quick access and hotkeys.
 
-## Replacing a demo placeholder with a clip
+This repository holds the source of the official website: **[animbench.com](https://animbench.com)**
 
-Export from Premiere as **H.264 MP4, no audio**, short loop, a few MB.
-Put the file in `assets/video/`, then in **both** `index.html` and `ru/index.html`
-replace the `<div class="clip-placeholder">…</div>` inside that demo with:
+## What's on the site
 
-```html
-<video data-loop autoplay muted loop playsinline preload="metadata" src="assets/video/curves.mp4"></video>
-```
+- Product overview in English and Russian
+- A tour of the toolbar: every tool with its icon and a short description
+- Feature demos (coming soon)
 
-(In `ru/index.html` the path starts with `../assets/`.)
+## Credits
 
-## Placeholders still to fill
+Typefaces: [Unbounded](https://github.com/googlefonts/unbounded) and [Onest](https://github.com/googlefonts/onest), both under the SIL Open Font License.
 
-Search for `[` in both pages: supported Maya versions and OS, price, how to buy, contact.
+---
 
-## Custom domain
-
-After `animbench.com` points to GitHub (DNS A records `185.199.108.153`,
-`185.199.109.153`, `185.199.110.153`, `185.199.111.153` and `www` CNAME to
-`kodabrius.github.io`), set it in Settings → Pages → Custom domain and enable
-Enforce HTTPS.
+© 2026 Andrey Dolzhenko. All rights reserved.
