@@ -11,9 +11,9 @@
   <meta property="og:title" content="Animbench — инструменты анимации для Maya">
   <meta property="og:description" content="Меньше рутины. Больше анимации.">
   <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" href="../assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -39,9 +39,11 @@
   </header>
 
   <main id="main">
+    <div class="ambient" aria-hidden="true"></div>
+
     <section class="wrap hero">
       <p class="eyebrow">Инструменты анимации для Autodesk Maya</p>
-      <h1>Меньше рутины. Больше анимации.</h1>
+      <h1 data-split>Меньше рутины. Больше анимации.</h1>
       <div class="hero-row">
         <p class="lead">Animbench объединяет повседневную работу с ключами, кривыми, позами, контролами и анимационными слоями в компактной панели с быстрым доступом и горячими клавишами. Дорабатывай движение, переноси позы и управляй анимацией, не отвлекаясь от персонажа.</p>
         <div class="actions">
@@ -140,6 +142,10 @@
       </div>
     </section>
 
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"><span>Selection Sets</span><span>Select Opposite</span><span>Nudge Keys</span><span>Smart Key</span><span>Animation Layers</span><span>Animation Clipboard</span><span>Mirror Animation</span><span>IK/FK Matcher</span><span>World Nodes</span><span>Tangent Tools</span><span>Curve Sliders</span><span>Arc Tracker</span><span>Smart Euler Filter</span><span>Overlap Dynamics</span><span>Space Switcher</span><span>Xform Relationship</span><span>Hierarchy &amp; Align</span><span>Reset Pose</span><span>Rotation Nodes</span><span>Temp Pivot</span></div>
+    </div>
+
     <section id="inside" class="wrap section">
       <div class="section-head reveal">
         <h2>Что внутри</h2>
@@ -190,7 +196,7 @@
 
     <section id="get" class="wrap cta">
       <div class="cta-inner reveal">
-        <h2>Готов к следующему шоту?</h2>
+        <h2 data-split>Готов к следующему шоту?</h2>
         <div class="cta-row">
           <a class="btn btn-primary btn-lg" href="#get">Получить Animbench</a>
           <span class="cta-meta">[ЦЕНА] · [КАК КУПИТЬ]</span>
