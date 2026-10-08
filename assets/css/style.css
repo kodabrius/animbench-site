@@ -67,12 +67,16 @@ a:hover { color: var(--accent); }
   position: sticky;
   top: 0;
   z-index: 5;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, background-color 0.3s;
+}
+.site-header.is-scrolled {
   background: rgba(10, 12, 15, 0.86);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: var(--line-soft);
 }
-.site-header.is-scrolled { border-bottom-color: var(--line-soft); }
 
 .site-header .wrap {
   display: flex;
@@ -536,7 +540,6 @@ body::after {
 .js .hero .eyebrow { animation: rise 0.9s var(--ease) 0.05s both; }
 .js .hero .lead { animation: rise 0.9s var(--ease) 0.55s both; }
 .js .hero .actions { animation: rise 0.9s var(--ease) 0.7s both; }
-.js .showreel { animation: rise 1.2s var(--ease) 0.85s both; }
 
 @keyframes word-up { from { transform: translateY(110%); } to { transform: none; } }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
@@ -550,7 +553,6 @@ body::after {
 .js .cta-inner.is-visible .word > span { transform: none; }
 
 /* Showreel grows to full size as it scrolls in (scale set from JS) */
-.showreel video { transform-origin: 50% 0; will-change: transform; }
 
 /* Demos: media scales in, text lines and tags follow in sequence */
 .js .demo.reveal { opacity: 1; transform: none; }
@@ -669,8 +671,7 @@ body::after {
   html { scroll-behavior: auto; }
   .js .reveal, .js .demo .demo-media, .js .demo .demo-text > *, .js .demo .demo-tags li,
   .js .groups .group { opacity: 1; transform: none; transition: none; }
-  .js .hero h1 .word > span, .js .hero .eyebrow, .js .hero .lead, .js .hero .actions,
-  .js .showreel { animation: none; }
+  .js .hero h1 .word > span, .js .hero .eyebrow, .js .hero .lead, .js .hero .actions { animation: none; }
   .js .cta .word > span { transform: none; transition: none; }
   .ambient::before, .ambient::after, .clip-placeholder, .clip-placeholder svg,
   .marquee-track { animation: none; }
@@ -698,3 +699,92 @@ body::after {
 
 /* Warm accent on the last headline word */
 .hero h1 .word:last-of-type > span { color: var(--accent-2); }
+
+/* ---------- Full-screen video stage ----------
+   The stage is taller than the screen; its inner layer sticks while you scroll.
+   JS writes --p (0 → 1) as you scroll through it: the copy drifts up and fades,
+   the video shrinks from full-bleed into a rounded card and dims, then the
+   stage ends and the rest of the page follows. */
+
+:root { --header-h: 76px; }
+
+.hero-stage {
+  --p: 0;
+  position: relative;
+  height: 210vh;
+  margin-top: calc(var(--header-h) * -1);
+}
+.hero-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(calc(var(--p) * 9vh) calc(var(--p) * 6vw) round calc(var(--p) * 28px));
+  will-change: clip-path;
+}
+.hero-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(calc(1.08 - var(--p) * 0.08));
+  filter: brightness(calc(0.92 - var(--p) * 0.35));
+  will-change: transform;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(10, 12, 15, 0.95) 0%, rgba(10, 12, 15, 0.72) 30%, rgba(10, 12, 15, 0) 62%),
+    linear-gradient(to bottom, rgba(10, 12, 15, 0.7) 0%, rgba(10, 12, 15, 0) 22%),
+    linear-gradient(to right, rgba(10, 12, 15, 0.45) 0%, rgba(10, 12, 15, 0) 55%);
+  opacity: calc(1 - var(--p) * 0.6);
+}
+
+.hero-stage .hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: clamp(40px, 9vh, 110px);
+  gap: 24px;
+  opacity: calc(1 - var(--p) * 2.4);
+  transform: translateY(calc(var(--p) * -90px));
+}
+.hero-stage .hero h1 { max-width: 14ch; text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35); }
+.hero-stage .eyebrow { color: #B4BDC7; }
+.hero-stage .lead { color: #CDD5DD; }
+
+.hero-stage .clip-toggle {
+  top: calc(var(--header-h) + 16px);
+  right: var(--gutter);
+  bottom: auto;
+  z-index: 3;
+  opacity: calc(1 - var(--p) * 2);
+}
+
+@media (max-width: 720px) {
+  :root { --header-h: 71px; }
+  .hero-stage { height: 170vh; }
+  .hero-media { clip-path: inset(calc(var(--p) * 7vh) calc(var(--p) * 4vw) round calc(var(--p) * 20px)); }
+  .hero-shade {
+    background:
+      linear-gradient(to top, rgba(10, 12, 15, 0.97) 0%, rgba(10, 12, 15, 0.8) 45%, rgba(10, 12, 15, 0) 75%),
+      linear-gradient(to bottom, rgba(10, 12, 15, 0.7) 0%, rgba(10, 12, 15, 0) 22%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-stage { height: auto; }
+  .hero-sticky { position: relative; min-height: 100vh; min-height: 100svh; }
+  .hero-media, .hero-media video, .hero-shade, .hero-stage .hero, .hero-stage .clip-toggle {
+    clip-path: none; transform: none; opacity: 1;
+  }
+}

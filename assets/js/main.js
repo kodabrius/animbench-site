@@ -54,22 +54,24 @@
     revealed.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  // Showreel grows from 90% to full size as it scrolls into view
-  var reel = document.querySelector('.showreel video');
-  if (reel && !reduceMotion) {
+  // Video stage: --p goes 0 → 1 while the sticky layer is pinned; CSS turns it
+  // into the copy fading up and the video shrinking into a card
+  var stage = document.querySelector('.hero-stage');
+  if (stage && !reduceMotion) {
     var ticking = false;
-    var updateReel = function () {
-      var rect = reel.getBoundingClientRect();
-      var vh = window.innerHeight;
-      var progress = Math.min(Math.max((vh - rect.top) / (vh * 0.9), 0), 1);
-      reel.style.transform = 'scale(' + (0.9 + 0.1 * progress).toFixed(4) + ')';
+    var updateStage = function () {
+      var travel = stage.offsetHeight - window.innerHeight;
+      var p = travel > 0 ? Math.min(Math.max(-stage.getBoundingClientRect().top / travel, 0), 1) : 0;
+      // ease-out so the change starts right away and settles softly
+      p = 1 - Math.pow(1 - p, 2);
+      stage.style.setProperty('--p', p.toFixed(4));
       ticking = false;
     };
     window.addEventListener('scroll', function () {
-      if (!ticking) { ticking = true; requestAnimationFrame(updateReel); }
+      if (!ticking) { ticking = true; requestAnimationFrame(updateStage); }
     }, { passive: true });
-    window.addEventListener('resize', updateReel);
-    updateReel();
+    window.addEventListener('resize', updateStage);
+    updateStage();
   }
 
   // Marquee: duplicate the track once so the loop is seamless

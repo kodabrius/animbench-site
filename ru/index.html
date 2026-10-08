@@ -41,24 +41,28 @@
   <main id="main">
     <div class="ambient" aria-hidden="true"></div>
 
-    <section class="wrap hero">
-      <p class="eyebrow">Инструменты анимации для Autodesk Maya</p>
-      <h1 data-split>Меньше рутины. Больше анимации.</h1>
-      <div class="hero-row">
-        <p class="lead">Animbench объединяет повседневную работу с ключами, кривыми, позами, контролами и анимационными слоями в компактной панели с быстрым доступом и горячими клавишами. Дорабатывай движение, переноси позы и управляй анимацией, не отвлекаясь от персонажа.</p>
-        <div class="actions">
-          <a class="btn btn-primary btn-lg" href="#get">Получить Animbench</a>
-          <a class="btn btn-ghost btn-lg" href="#demos">Посмотреть в работе</a>
+    <section class="hero-stage">
+      <div class="hero-sticky">
+        <div class="hero-media">
+          <video data-loop data-hero autoplay muted loop playsinline preload="auto" aria-label="Зацикленная анимация походки в Maya">
+            <source src="../assets/video/walk.mov" type="video/mp4">
+          </video>
+          <div class="hero-shade" aria-hidden="true"></div>
         </div>
+        <div class="wrap hero">
+          <p class="eyebrow">Инструменты анимации для Autodesk Maya</p>
+          <h1 data-split>Меньше рутины. Больше анимации.</h1>
+          <div class="hero-row">
+            <p class="lead">Animbench объединяет повседневную работу с ключами, кривыми, позами, контролами и анимационными слоями в компактной панели с быстрым доступом и горячими клавишами. Дорабатывай движение, переноси позы и управляй анимацией, не отвлекаясь от персонажа.</p>
+            <div class="actions">
+              <a class="btn btn-primary btn-lg" href="#get">Получить Animbench</a>
+              <a class="btn btn-ghost btn-lg" href="#demos">Посмотреть в работе</a>
+            </div>
+          </div>
+        </div>
+        <button class="clip-toggle" type="button" data-pause="Пауза" data-play="Пуск">Пауза</button>
       </div>
     </section>
-
-    <figure class="wrap showreel">
-      <video data-loop autoplay muted loop playsinline preload="auto" aria-label="Зацикленная анимация походки в Maya">
-        <source src="../assets/video/walk.mov" type="video/mp4">
-      </video>
-      <button class="clip-toggle" type="button" data-pause="Пауза" data-play="Пуск">Пауза</button>
-    </figure>
 
     <section id="demos" class="wrap section">
       <div class="demos">

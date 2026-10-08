@@ -41,24 +41,28 @@
   <main id="main">
     <div class="ambient" aria-hidden="true"></div>
 
-    <section class="wrap hero">
-      <p class="eyebrow">Animation toolkit for Autodesk Maya</p>
-      <h1 data-split>Less routine. More animation.</h1>
-      <div class="hero-row">
-        <p class="lead">Animbench brings everyday work with keys, curves, poses, controls and animation layers into one compact toolbar with quick access and hotkeys. Refine motion, transfer poses and manage animation without stepping away from the character.</p>
-        <div class="actions">
-          <a class="btn btn-primary btn-lg" href="#get">Get Animbench</a>
-          <a class="btn btn-ghost btn-lg" href="#demos">See it in action</a>
+    <section class="hero-stage">
+      <div class="hero-sticky">
+        <div class="hero-media">
+          <video data-loop data-hero autoplay muted loop playsinline preload="auto" aria-label="A looping walk cycle animated in Maya">
+            <source src="assets/video/walk.mov" type="video/mp4">
+          </video>
+          <div class="hero-shade" aria-hidden="true"></div>
         </div>
+        <div class="wrap hero">
+          <p class="eyebrow">Animation toolkit for Autodesk Maya</p>
+          <h1 data-split>Less routine. More animation.</h1>
+          <div class="hero-row">
+            <p class="lead">Animbench brings everyday work with keys, curves, poses, controls and animation layers into one compact toolbar with quick access and hotkeys. Refine motion, transfer poses and manage animation without stepping away from the character.</p>
+            <div class="actions">
+              <a class="btn btn-primary btn-lg" href="#get">Get Animbench</a>
+              <a class="btn btn-ghost btn-lg" href="#demos">See it in action</a>
+            </div>
+          </div>
+        </div>
+        <button class="clip-toggle" type="button" data-pause="Pause" data-play="Play">Pause</button>
       </div>
     </section>
-
-    <figure class="wrap showreel">
-      <video data-loop autoplay muted loop playsinline preload="auto" aria-label="A looping walk cycle animated in Maya">
-        <source src="assets/video/walk.mov" type="video/mp4">
-      </video>
-      <button class="clip-toggle" type="button" data-pause="Pause" data-play="Play">Pause</button>
-    </figure>
 
     <section id="demos" class="wrap section">
       <div class="demos">
