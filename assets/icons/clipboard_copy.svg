@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>clipboard_copy</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#737b82" stroke-opacity="1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M12,14 C12,12.3431 13.3431,11 15,11 L38,11 C39.6569,11 41,12.3431 41,14 L41,43 C41,44.6569 39.6569,46 38,46 L15,46 C13.3431,46 12,44.6569 12,43 L12,14"/>
+</g>
+
+<g fill="none" stroke="#d8dde0" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M20,21 C20,19.3431 21.3431,18 23,18 L50,18 C51.6569,18 53,19.3431 53,21 L53,53 C53,54.6569 51.6569,56 50,56 L23,56 C21.3431,56 20,54.6569 20,53 L20,21"/>
+</g>
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M31,25 L35,29 L31,33 L27,29 L31,25"/>
+</g>
+
+<g fill="none" stroke="#43d6b1" stroke-opacity="1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="31,36 41,46 " />
+<polyline fill="none" vector-effect="none" points="44,49 37.6997,47.5221 " />
+<polyline fill="none" vector-effect="none" points="44,49 42.5221,42.6997 " />
+</g>
+</g>
+</svg>

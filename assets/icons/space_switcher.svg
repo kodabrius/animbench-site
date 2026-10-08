@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>space_switcher</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M32,26 L38,32 L32,38 L26,32 L32,26"/>
+</g>
+
+<g fill="none" stroke="#43d6b1" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="16,19 48,19 " />
+<polyline fill="none" vector-effect="none" points="48,19 43.2,21.976 " />
+<polyline fill="none" vector-effect="none" points="48,19 43.2,16.024 " />
+</g>
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="48,45 16,45 " />
+<polyline fill="none" vector-effect="none" points="16,45 20.8,42.024 " />
+<polyline fill="none" vector-effect="none" points="16,45 20.8,47.976 " />
+</g>
+</g>
+</svg>

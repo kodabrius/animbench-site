@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>selection_sets</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#303740" fill-opacity="1" stroke="#737b82" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M12,17 C12,14.2386 14.2386,12 17,12 L47,12 C49.7614,12 52,14.2386 52,17 L52,47 C52,49.7614 49.7614,52 47,52 L17,52 C14.2386,52 12,49.7614 12,47 L12,17"/>
+</g>
+
+<g fill="#f5a623" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M17,17 C17,15.8954 17.8954,15 19,15 L24,15 C25.1046,15 26,15.8954 26,17 L26,21 C26,22.1046 25.1046,23 24,23 L19,23 C17.8954,23 17,22.1046 17,21 L17,17"/>
+</g>
+
+<g fill="#f5a623" fill-opacity="1" stroke="#d8dde0" stroke-opacity="1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="31,19 46,19 " />
+</g>
+
+<g fill="#43d6b1" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M17,29.5 C17,28.3954 17.8954,27.5 19,27.5 L24,27.5 C25.1046,27.5 26,28.3954 26,29.5 L26,33.5 C26,34.6046 25.1046,35.5 24,35.5 L19,35.5 C17.8954,35.5 17,34.6046 17,33.5 L17,29.5"/>
+</g>
+
+<g fill="#43d6b1" fill-opacity="1" stroke="#d8dde0" stroke-opacity="1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="31,31.5 46,31.5 " />
+</g>
+
+<g fill="#6d92c4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M17,42 C17,40.8954 17.8954,40 19,40 L24,40 C25.1046,40 26,40.8954 26,42 L26,46 C26,47.1046 25.1046,48 24,48 L19,48 C17.8954,48 17,47.1046 17,46 L17,42"/>
+</g>
+
+<g fill="#6d92c4" fill-opacity="1" stroke="#d8dde0" stroke-opacity="1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="31,44 46,44 " />
+</g>
+</g>
+</svg>

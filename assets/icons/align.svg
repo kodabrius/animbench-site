@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>align</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#43d6b1" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M18,14.5 L24.5,21 L18,27.5 L11.5,21 L18,14.5"/>
+</g>
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M46,35.5 L53.5,43 L46,50.5 L38.5,43 L46,35.5"/>
+</g>
+
+<g fill="none" stroke="#d8dde0" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="23.5,25.5 40,38 " />
+<polyline fill="none" vector-effect="none" points="40,38 34.7165,37.6547 " />
+<polyline fill="none" vector-effect="none" points="40,38 37.9599,33.1141 " />
+</g>
+
+<g fill="none" stroke="#737b82" stroke-opacity="1" stroke-dasharray="7.2,3.6" stroke-dashoffset="0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="11,43 53,43 " />
+</g>
+</g>
+</svg>

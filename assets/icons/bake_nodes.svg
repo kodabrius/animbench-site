@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>bake_nodes</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#43d6b1" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="14,47 50,47 " />
+<polyline fill="none" vector-effect="none" points="18,47 18,53 " />
+<polyline fill="none" vector-effect="none" points="46,47 46,53 " />
+</g>
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M20,18.2 L23.8,22 L20,25.8 L16.2,22 L20,18.2"/>
+<path vector-effect="none" fill-rule="evenodd" d="M32,13.2 L35.8,17 L32,20.8 L28.2,17 L32,13.2"/>
+<path vector-effect="none" fill-rule="evenodd" d="M44,21.2 L47.8,25 L44,28.8 L40.2,25 L44,21.2"/>
+</g>
+
+<g fill="none" stroke="#d8dde0" stroke-opacity="1" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="20,28 32,40 " />
+<polyline fill="none" vector-effect="none" points="32,23 32,40 " />
+<polyline fill="none" vector-effect="none" points="44,31 32,40 " />
+<polyline fill="none" vector-effect="none" points="32,43 29.21,38.5 " />
+<polyline fill="none" vector-effect="none" points="32,43 34.79,38.5 " />
+</g>
+</g>
+</svg>

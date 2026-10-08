@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64"
+ viewBox="0 0 64 64"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>nudge_right</title>
+
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#43d6b1" stroke-opacity="1" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="15,32 53,32 " />
+<polyline fill="none" vector-effect="none" points="53,32 47.3,35.534 " />
+<polyline fill="none" vector-effect="none" points="53,32 47.3,28.466 " />
+</g>
+
+<g fill="none" stroke="#f5a623" stroke-opacity="1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M19,26.8 L24.2,32 L19,37.2 L13.8,32 L19,26.8"/>
+</g>
+</g>
+</svg>

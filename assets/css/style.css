@@ -788,3 +788,144 @@ body::after {
     clip-path: none; transform: none; opacity: 1;
   }
 }
+
+/* ---------- Tools page ---------- */
+
+.site-header.is-solid {
+  background: rgba(10, 12, 15, 0.86);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.nav a[aria-current="page"] { color: var(--accent); }
+
+.section-head .btn { flex: none; }
+
+.tools-hero {
+  padding-top: clamp(56px, 8vw, 112px);
+  padding-bottom: clamp(32px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.tools-hero h1 {
+  margin: 0;
+  max-width: 16ch;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(38px, 6vw, 88px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.js .tools-hero h1 .word > span {
+  animation: word-up 1.1s var(--ease) both;
+  animation-delay: calc(0.1s + var(--i) * 0.07s);
+}
+.js .tools-hero .lead, .js .tools-hero .tool-chips { animation: rise 0.9s var(--ease) 0.45s both; }
+
+.tool-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tool-chips a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--text-2);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.tool-chips a:hover { border-color: var(--accent); color: var(--text); }
+
+.tools-list { padding-bottom: clamp(96px, 12vw, 160px); }
+
+.tool-group { padding-top: clamp(56px, 7vw, 96px); scroll-margin-top: 80px; }
+.tool-group h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 28px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 34px);
+}
+.tool-group h2 span { font-size: 15px; color: var(--accent-2); }
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tool {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 24px;
+  background: var(--bg);
+  transition: background-color 0.2s;
+}
+.tool:hover { background: var(--surface); }
+.tool-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background: #12171D;
+  border: 1px solid #1E252D;
+  transition: transform 0.3s var(--ease), border-color 0.3s;
+}
+.tool:hover .tool-icon { transform: translateY(-2px) scale(1.05); border-color: #2C3640; }
+.tool-icon img { width: 40px; height: 40px; }
+.tool-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.tool-body h3 { margin: 0; font-size: 17px; font-weight: 600; }
+.tool-body p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.tool-body .tool-note { font-size: 13px; color: var(--accent-2); opacity: 0.85; }
+.tool-badge {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border: 1px solid rgba(242, 163, 58, 0.45);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--accent-2);
+}
+
+/* Cards in a group arrive in a quick wave */
+.js .tool-group.reveal { opacity: 1; transform: none; }
+.js .tool-group .tool {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease), background-color 0.2s;
+}
+.js .tool-group.is-visible .tool { opacity: 1; transform: none; }
+.js .tool-group.is-visible .tool:nth-child(2) { transition-delay: 0.05s; }
+.js .tool-group.is-visible .tool:nth-child(3) { transition-delay: 0.1s; }
+.js .tool-group.is-visible .tool:nth-child(4) { transition-delay: 0.15s; }
+.js .tool-group.is-visible .tool:nth-child(5) { transition-delay: 0.2s; }
+.js .tool-group.is-visible .tool:nth-child(6) { transition-delay: 0.25s; }
+.js .tool-group.is-visible .tool:nth-child(7) { transition-delay: 0.3s; }
+.js .tool-group.is-visible .tool:nth-child(8) { transition-delay: 0.35s; }
+.js .tool-group.is-visible .tool:nth-child(9) { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .tool-group .tool { opacity: 1; transform: none; transition: none; }
+  .js .tools-hero h1 .word > span, .js .tools-hero .lead, .js .tools-hero .tool-chips { animation: none; }
+  .tool:hover .tool-icon { transform: none; }
+}
